@@ -1,0 +1,197 @@
+<html>
+
+<head>
+  <title>Real Time Image Identification App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="background.jpg">
+  <center>
+    <div class="bob col-xs-12">
+      <li class="col-sm-4 col-xs-12"> <b style="color: white; font-size: 20px; ">1. Test Image - </b><img
+          src="https://www.midwives2020.org/wp-content/uploads/2021/02/719-00201_main-shot_01_therapur-cool-pillow.jpg" class="img-responsive"> </li>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> - <span>pillow</span> </h5>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> - <span>pillow</span> </h5>
+      <div class="bob3" class="col-xs-12">
+        <h4>Result - Both Models are accurate</h4>
+        <hr>
+      </div>
+    </div> <br>
+    <hr>
+    <h4>Result - Google Lens is more accurate</h4>
+    <hr>
+    </div>
+    </div>
+    <hr>
+
+    <div class="bob col-xs-12">
+      <li class="col-sm-4 col-xs-12"> <b style="color: white; font-size: 20px; ">2. Test Image - </b><img
+          src="https://media.istockphoto.com/photos/group-of-plastic-drink-water-bottles-picture-id616007072" class="img-responsive"> </li>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> - <span>water bottle</span> </h5>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> - <span>water bottle</span> </h5>
+      <div class="bob3" class="col-xs-12">
+        <h4>Result - Both Models are accurate</h4>
+        <hr>
+      </div>
+    </div> <br>
+    <hr>
+   
+    <hr>
+    </div>
+    </div>
+    <hr>
+
+    <div class="bob col-xs-12">
+      <li class="col-sm-4 col-xs-12"> <b style="color: white; font-size: 20px; ">3. Test Image - </b><img
+          src="https://m.media-amazon.com/images/I/81-jjAp22zL._SX355_.jpg" class="img-responsive"> </li>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> - <span>box</span> </h5>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> - <span>box</span> </h5>
+      <div class="bob3" class="col-xs-12">
+        <h4>Result - Both Models are accurate</h4>
+        <hr>
+      </div>
+    </div> <br>
+    <hr>
+ 
+    <hr>
+    </div>
+    </div>
+    <hr>
+
+    <div class="bob col-xs-12">
+      <li class="col-sm-4 col-xs-12"> <b style="color: white; font-size: 20px; ">4. Test Image - </b><img
+          src="https://static.turbosquid.com/Preview/2014/07/08__09_26_12/moneybag.jpg77a693d2-de20-4a17-a281-69ca0ee7734cLarge.jpg" class="img-responsive"> </li>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> - <span>money bag</span> </h5>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> - <span>money bag</span> </h5>
+      <div class="bob3" class="col-xs-12">
+        <h4>Result - Both Models are accurate</h4>
+        <hr>
+      </div>
+    </div> <br>
+    <hr>
+
+    <hr>
+    </div>
+    </div>
+    <hr>
+
+    <div class="bob col-xs-12">
+      <li class="col-sm-4 col-xs-12"> <b style="color: white; font-size: 20px; ">5. Test Image - </b><img
+          src="https://cdn2.vectorstock.com/i/thumb-large/35/06/hand-showing-thumbs-up-symbol-vector-27373506.jpg" class="img-responsive"> </li>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> - <span>thumb's up</span> </h5>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> - <span>thumb's up</span> </h5>
+      <div class="bob3" class="col-xs-12">
+        <h4>Result - Both Models are accurate</h4>
+        <hr>
+      </div>
+    </div> <br>
+    <hr>
+    
+    <hr>
+    </div>
+    </div>
+    <hr>
+
+    <div class="bob col-xs-12">
+      <li class="col-sm-4 col-xs-12"> <b style="color: white; font-size: 20px; ">6. Test Image - </b><img
+          src="https://rukminim1.flixcart.com/image/416/416/k2m6ufk0/action-figure/z/e/5/40-off-avengers-endgame-iron-man-toy-action-figure-kidzholic-original-imafhxpqbtqjqxyw.jpeg?q=70" class="img-responsive"> </li>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> - <span>toy</span> </h5>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> - <span>toy</span> </h5>
+      <div class="bob3" class="col-xs-12">
+        <h4>Result - Both Models are accurate</h4>
+        <hr>
+      </div>
+    </div> <br>
+    <hr>
+
+    <hr>
+    </div>
+    </div>
+    <hr>
+
+    <div class="bob col-xs-12">
+      <li class="col-sm-4 col-xs-12"> <b style="color: white; font-size: 20px; ">7. Test Image - </b><img
+          src="https://5.imimg.com/data5/HA/XJ/HK/SELLER-22736063/knitting-woolen-yarn-500x500.jpg" class="img-responsive"> </li>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> - <span>wool</span> </h5>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> - <span>wool</span> </h5>
+      <div class="bob3" class="col-xs-12">
+        <h4>Result - Both Models are accurate</h4>
+        <hr>
+      </div>
+    </div> <br>
+    <hr>
+
+    <hr>
+    </div>
+    </div>
+    <hr>
+
+    <div class="bob col-xs-12">
+      <li class="col-sm-4 col-xs-12"> <b style="color: white; font-size: 20px; ">8. Test Image - </b><img
+          src="https://images.indianexpress.com/2021/08/dog-1200.jpg" class="img-responsive"> </li>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> - <span>dog</span> </h5>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> - <span>dog</span> </h5>
+      <div class="bob3" class="col-xs-12">
+        <h4>Result - Both Models are accurate</h4>
+        <hr>
+      </div>
+    </div> <br>
+    <hr>
+    
+    <hr>
+    </div>
+    </div>
+    <hr>
+
+    <div class="bob col-xs-12">
+      <li class="col-sm-4 col-xs-12"> <b style="color: white; font-size: 20px; ">9. Test Image - </b><img
+          src="https://watchandlearn.scholastic.com/content/dam/classroom-magazines/watchandlearn/videos/animals-and-plants/plants/what-are-plants-/What-Are-Plants.jpg" class="img-responsive"> </li>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> - <span>plant</span> </h5>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> - <span>plant</span> </h5>
+      <div class="bob3" class="col-xs-12">
+        <h4>Result - Both Models are accurate</h4>
+        <hr>
+      </div>
+    </div> <br>
+    <hr>
+
+    <hr>
+    </div>
+    </div>
+    <hr>
+
+    <div class="bob col-xs-12">
+      <li class="col-sm-4 col-xs-12"> <b style="color: white; font-size: 20px; ">10. Test Image - </b><img
+          src="https://m.media-amazon.com/images/I/61uoAZqd3NL.jpg" class="img-responsive"> </li>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>GOOGLE LENS</b> - <span>comic</span> </h5>
+      <h5 class="col-sm-4 col-xs-12">Output on <b>Mobilenet Model </b> - <span>comic</span> </h5>
+      <div class="bob3" class="col-xs-12">
+        <h4>Result - Both Models are accurate</h4>
+        <hr>
+      </div>
+    </div> <br>
+    <hr>
+    
+    <hr>
+    </div>
+    </div>
+    <hr>
+
+  </center>
+
+  <div class="copy_right_footer">
+    Developed by Jude
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
